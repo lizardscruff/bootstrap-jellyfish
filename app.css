@@ -1,0 +1,77 @@
+body {
+    /* overflow-x: hidden gets rid of the horizontal scroll bar */
+    /* overflow-x: hidden; */
+    background: #24363a;
+    font-family: "Nunito", sans-serif;
+}
+
+.blurb h2 {
+    color: #ff9133;
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+
+.blurb p {
+    color: #e4a7a2;
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#headingGroup h1 {
+    color: #e4a7a2;
+}
+
+#mainNavbar {
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #ff9133;
+}
+
+
+#mainNavbar .navbar-brand {
+    color: #ffe0cf;
+    font-size: 1.5rem;
+}
+
+/* doing the red slashes this way prevents you 
+from having to add classes to each span */
+/* Don't Repeat Yourself */
+#headingGroup span {
+    color: #ea1c2c;
+}
+
+#headingGroup h1 {
+    /* makes them thinner */
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+/* this is our class that gets toggled with the javascript here */
+.navbar.scrolled {
+    background: #011724;
+    transition: background 350ms;
+}
+
+/* got a media query so it's not so ugly between 992 and 1250 */
+@media (max-width: 1250px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+    .blurb h2 {
+        font-size: 2rem;
+    }
+}
